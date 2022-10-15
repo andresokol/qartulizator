@@ -1,0 +1,30 @@
+.day_buttons_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.day_buttons_container button {
+  background-color: unset;
+
+  text-align: center;
+  padding: 12px 12px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+  border: 2px solid var(--q-main-color);
+
+  color: var(--q-main-color);
+}
+
+.day_buttons_container button p {
+  padding: 0;
+  margin: 0;
+}
+
+.day_buttons_container button p:first-child {
+  font-weight: bold;
+}

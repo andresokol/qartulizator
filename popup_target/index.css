@@ -1,0 +1,104 @@
+:root {
+  --q-main-color: #f00;
+  --q-accent-color: #a00;
+}
+
+html,
+body {
+  width: 300px;
+  height: 450px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  border: 1px solid #ddd;
+  font-family: "Noto Sans Georgian", "Noto Sans", sans-serif;
+  padding: 10px 20px;
+}
+
+h1 {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h1:last-child {
+  text-align: right;
+  color: var(--q-main-color);
+}
+
+.button_go_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 34px 0;
+}
+
+.button_go {
+  color: white;
+  background-color: var(--q-main-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 20px;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+}
+
+.day_buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.day_button {
+  font-family: "Noto Serif Georgian", "Noto Serif", serif;
+
+  cursor: pointer;
+  /* width: 100%; */
+
+  text-align: center;
+  padding: 12px 12px;
+  margin-bottom: 15px;
+
+  border-radius: 5px;
+  border: 2px solid var(--q-main-color);
+
+  color: var(--q-main-color);
+}
+
+.day_button > p {
+  padding: 0;
+  margin: 0;
+}
+
+.day_button > p:first-child {
+  font-weight: bold;
+}
+
+.day_button.active {
+  background-color: var(--q-main-color);
+  color: white;
+}
+
+.day_button:hover {
+  box-shadow: 2px 4px 0 0 var(--q-main-color);
+}
+
+.day_button.active:hover {
+  box-shadow: 2px 4px 0 0 var(--q-accent-color);
+}
