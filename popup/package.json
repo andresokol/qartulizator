@@ -13,6 +13,8 @@
     "typescript": "^4.4.2"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.199",
+    "@types/firefox-webext-browser": "^94.0.1",
     "prettier": "^2.7.1"
   },
   "scripts": {

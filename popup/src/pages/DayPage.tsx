@@ -1,5 +1,6 @@
 import React from "react";
 import { CONVERSION_RULES, IRule } from "../consts";
+import { sendCommand } from "../extentionCommands";
 
 import styles from "./DayPage.module.css";
 
@@ -38,7 +39,10 @@ const DayPage = ({ dayNum }: { dayNum: number }) => {
       </p>
 
       <div className={styles.qartulize_button_container}>
-        <button className={styles.qartulize_button}>
+        <button
+          className={styles.qartulize_button}
+          onClick={() => sendCommand()}
+        >
           картулизовать страницу
         </button>
       </div>
