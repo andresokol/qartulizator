@@ -1,4 +1,12 @@
-const CONVERSION_RULES_LIST = [
+interface IRule {
+  idx: string;
+  from: string;
+  to: string;
+  re: RegExp;
+  complexity: number;
+}
+
+const CONVERSION_RULES_LIST: IRule[] = [
   { idx: "a", from: "а", to: "ა", re: /[Аа]/g, complexity: 1 },
   { idx: "b", from: "б", to: "ბ", re: /[Бб]/g, complexity: 1 },
   { idx: "v", from: "в", to: "ვ", re: /[Вв]/g, complexity: 1 },
@@ -30,3 +38,4 @@ const CONVERSION_RULES = new Map(
 );
 
 export { CONVERSION_RULES };
+export type { IRule };

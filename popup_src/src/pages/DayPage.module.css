@@ -1,0 +1,68 @@
+.title {
+  margin: 0;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.letter_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.letter_box p {
+  width: fit-content;
+
+  margin: 30px;
+
+  font-size: 36px;
+  font-family: var(--noto-serif);
+}
+
+.comment {
+  font-size: 18px;
+  margin: 0;
+}
+
+.qartulize_button_container {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.qartulize_button {
+  width: 280px;
+
+  padding: 17px;
+  margin: 0;
+  border: 0;
+
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--noto-sans);
+  color: white;
+
+  background-color: var(--q-main-color);
+
+  border-radius: 5px;
+}
+
+.qartulize_button:hover {
+  background-color: var(--q-accent-color);
+}
+
+.paginator {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.paginator span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.paginator span:hover {
+  text-decoration: underline;
+}
