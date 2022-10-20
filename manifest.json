@@ -14,6 +14,6 @@
   "browser_action": {
     "default_icon": "icons/border-48.png",
     "default_title": "Qartulizator",
-    "default_popup": "popup_build/index.html"
+    "default_popup": "build/index.html"
   }
 }
