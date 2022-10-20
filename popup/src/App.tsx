@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./App.css";
-import DayButtons from "./DayButtons";
 import DayPage from "./pages/DayPage";
 
 const App = () => {
