@@ -6,6 +6,16 @@
   console.log("[QARTU] Injecting the script");
   window.hasRun = true;
 
+  // API detection hack
+  const browser = (() => {
+    try {
+      return browser;
+    } catch {
+      return chrome;
+    }
+  })();
+  //
+
   const CONVERSION_RULES = [
     { idx: "a", from: "а", to: "ა", re: /[Аа]/g, complexity: 1 },
     { idx: "b", from: "б", to: "ბ", re: /[Бб]/g, complexity: 1 },

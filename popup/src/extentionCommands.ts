@@ -1,3 +1,5 @@
+import browser from "webextension-polyfill";
+
 const sendCommand = async () => {
   console.log("Sending command");
 
